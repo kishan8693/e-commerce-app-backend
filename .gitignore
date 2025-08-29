@@ -1,20 +1,39 @@
 # Node.js
-node_modules
+node_modules/
 npm-debug.log*
 yarn-error.log
-.env
-dist
-build
-coverage
+package-lock.json
+
+# Env files
+.env*
+!.env.example
+
+# Build outputs
+dist/
+build/
+coverage/
 
 # React / Vite / Frontend
-.vite
+.vite/
 *.local
 *.cache
 
-# macOS
+# Logs
+logs/
+*.log
+
+# OS
 .DS_Store
 
-# Logs
-logs
-*.log
+# Process IDs
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE / Editors
+.idea/
+.vscode/
+
+# Test cache
+.nyc_output
